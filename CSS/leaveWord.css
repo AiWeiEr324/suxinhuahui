@@ -1,0 +1,361 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing:border-box;
+}
+a{
+    text-decoration:none;
+}
+body{
+    padding-top:80px;
+    height:100%;
+    background-color:#fff;
+}
+/*留言建议导航开始*/
+#su_header{
+    width: 100%;
+    height: 79px;
+    background: #fff;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 99;
+}
+.header_content{
+    width:1170px;
+    height: 100%;
+    padding:0 15px;
+    margin:0 auto;
+}
+.header_logo{
+    width:150px;
+    height:100%;
+    float:left;
+}
+.header_logo a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.header_logo_middle{
+    width:100%;
+    height:50px;
+    margin-top:13px;
+}
+.header_logo_middle img{
+    height:100%;
+}
+.header_text{
+    /*width:602px;*/
+    height:100%;
+    float:right;
+    font-size:14px;
+    text-align:center;
+}
+.header_text li{
+    /*width:86px;*/
+    height:100%;
+    float:left;
+}
+.header_text li a{
+    display:block;
+    /*width:56px;*/
+    height:100%;
+    line-height:79px;
+    color:#2a333c;
+    padding:0 15px;
+}
+.header_text li a.active{
+    color:#16b0dc;
+}
+.header_text li a:hover{
+    color:#16b0dc;
+}
+.aHover{
+    transition:all 0.25s linear;
+}
+.aHover:hover .down_menu{
+    display: block;
+}
+.caret{
+    display: inline-block;
+    width:0;
+    height:0;
+    margin-left:2px;
+    border-top:4px solid;
+    border-left:4px solid transparent;
+    border-right:4px solid transparent;
+}
+.down_menu {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 79px;
+    right: 18%;
+    padding: 0;
+    margin: 0;
+}
+.down_menu::before{
+    content:"";
+    display: inline-block;
+    width:0;
+    height:0;
+    border-bottom:6px solid;
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    color:#16b0dc;
+    position: absolute;
+    top:-7px;
+    right:4px;
+    transition:all 0.25s linear;
+}
+.down_menu li{
+    width:152px;
+    display: inline-block;
+    margin:0;
+    color:#303336;
+}
+.down_menu li a{
+    display: block;
+    width:100%;
+    height:auto;
+    padding:8px 15px;
+    clear: both;
+    text-align: left;
+    line-height: 1.57142857;
+    border-bottom:1px solid #e4eaec;
+}
+/*留言建议导航结束*/
+/*留言建议标题开始*/
+#bg_content{
+    width:100%;
+    height:120px;
+    background-color:#f1f1f1;
+    text-align: center;
+}
+#bg_content:before{
+    content:"";
+    display: inline-block;
+    height:100%;
+    vertical-align: middle;
+}
+#bg_content h1 {
+    color: #f67a82;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 10px 30px;
+    vertical-align: middle;
+    display: inline-block;
+}
+/*留言建议标题结束*/
+/*留言建议留言部分开始*/
+#met_news{
+    padding:30px 0;
+    background-color:#f2f2f2;
+    border-top:1px solid #f0f2f5;
+}
+.container{
+    width:1170px;
+    margin:0 auto;
+    padding-right:15px;
+    padding-left:15px;
+}
+.met_news_list{
+    position: relative;
+    /*display: flex;*/
+}.met_news_content{
+     width:71%;
+     padding:30px;
+     background:#fff;
+     margin:0 -15px;
+ }
+.met_news_list_page {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 11px;
+
+}
+.met_news_list_page li{
+    border-bottom:1px solid #f0f2f5;
+    padding:10px 0;
+}
+figure{
+    padding:2px 0;
+    border-bottom:0;
+    display: flex;
+}
+figure i.icon-yonghu{
+    font-size:36px;
+    color:#a3afb7;
+    margin-right:10px;
+}
+figcaption{
+    width:100%;
+}
+figcaption p{
+    font-size:14px;
+    color:#76838f;
+    margin:0 0 11px;
+}
+.figcaption_heading {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #37474f;
+    font-weight: 400;
+    text-shadow: rgba(0, 0, 0, .15) 0 0 1px
+}
+.content{
+    padding:20px;
+    background-color:#f3f7f9;
+    border:1px solid #e4eaec;
+    border-radius:3px;
+    color:#2a333c;
+    font-size:14px;
+}
+.figcaption_heading_right{
+    float: right;
+    padding-left:20px;
+    font-weight:300;
+    color:#a3afb7;
+    font-size:75%;
+}
+.met_news_right{
+    width:29%;
+    height:auto;
+    background:#fff;
+    margin:0 -15px;
+    padding: 30px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.form_group{
+    margin-bottom:20px;
+}
+.control_input .form_group_control{
+    width:100%;
+    float:left;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    border-right:0;
+}
+.form_group_control{
+    display:block;
+    width:100%;
+    height:36px;
+    padding:6px 15px;
+    font-size:14px;
+    color:#76838f;
+    background-color:#fff;
+    border:1px solid #e4eaec;
+    border-radius:3px;
+    outline:none;
+    transition:all 0.25s linear;
+}
+textarea.form_group_control{
+    height:auto;
+}
+.form_group_control:focus{
+    border-color:#62A8E9;
+}
+.form_group input::placeholder{
+    color:#76838f;
+}
+.control_input{
+    display: flex;
+}
+.form_group_addon{
+    padding:6px 15px;
+    font-size:14px;
+    color:#76838f;
+    text-align:center;
+    background-color:#f3f7f9;
+    border:1px solid #e4eaec;
+    border-radius:3px;
+    font-weight:300;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    transition:all 0.25s linear;
+}
+.form_group_addon img{
+    vertical-align:middle;
+}
+.margin-bottom-0{
+    margin-bottom:0;
+}
+.btn {
+    width: 100%;
+    display: block;
+    color: #fff;
+    background-color: #62a8ea;
+    border-radius: 0;
+    padding: 6px 15px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #62a8ea;
+    transition:all 0.25s linear;
+}
+.btn:hover{
+    background-color:#89bceb;
+    border-color:#89bceb;
+}
+/*留言建议留言部分结束*/
+/*素馨花卉底部开始*/
+footer{
+    background:#f5f5f5;
+    border-top:1px solid #f5f5f5;
+    padding-bottom:20px;
+    color:#aaa;
+    height:auto;
+    line-height:1.8;
+}
+.linksnav{
+    padding:10px 0;
+    background:#fff;
+}
+.met_social{
+    margin-top:10px;
+    padding:5px 0;
+    text-align:center;
+    box-sizing:border-box;
+}
+.met_social a{
+    margin:0 8px;
+}
+.met_social i{
+    font-size:26px;
+    color:#83b944;
+    position: relative;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 400;
+    transform: translate(0,0);
+    text-rendering:auto;
+    speak: none;
+}
+.met_social .social_blue{
+    color:#62a8ea;
+}
+.met_social .social_blue:hover{
+    color:#89bceb;
+}
+.txt{
+    font-size:14px;
+    text-align: center;
+}
+.txt a{
+    color:#62a8ea;
+}
+.txt a:hover{
+    color:#89bceb;
+    text-decoration:underline;
+}
+.txt img{
+    vertical-align:middle;
+}
+/*素馨花卉底部结束*/

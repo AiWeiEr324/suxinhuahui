@@ -1,0 +1,355 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing:border-box;
+}
+a{
+    text-decoration:none;
+}
+body{
+    padding-top:80px;
+    height:100%;
+    background-color:#fff;
+}
+/*花言花语导航开始*/
+#su_header{
+    width: 100%;
+    height: 79px;
+    background: #fff;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 99;
+}
+.header_content{
+    width:1170px;
+    height: 100%;
+    padding:0 15px;
+    margin:0 auto;
+}
+.header_logo{
+    width:150px;
+    height:100%;
+    float:left;
+}
+.header_logo a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.header_logo_middle{
+    width:100%;
+    height:50px;
+    margin-top:13px;
+}
+.header_logo_middle img{
+    height:100%;
+}
+.header_text{
+    /*width:602px;*/
+    height:100%;
+    float:right;
+    font-size:14px;
+    text-align:center;
+}
+.header_text li{
+    /*width:86px;*/
+    height:100%;
+    float:left;
+}
+.header_text li a{
+    display:block;
+    /*width:56px;*/
+    height:100%;
+    line-height:79px;
+    color:#2a333c;
+    padding:0 15px;
+}
+.header_text li a.active{
+    color:#16b0dc;
+}
+.header_text li a:hover{
+    color:#16b0dc;
+}
+/*花言花语导航结束*/
+/*花言花语标题开始*/
+#bg_content{
+    width:100%;
+    height:120px;
+    background-color:#f1f1f1;
+    text-align: center;
+}
+#bg_content:before{
+    content:"";
+    display: inline-block;
+    height:100%;
+    vertical-align: middle;
+}
+#bg_content h1 {
+    color: #f67a82;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 10px 30px;
+    vertical-align: middle;
+    display: inline-block;
+}
+/*花言花语标题结束*/
+/*花言花语内容开始*/
+#met_news{
+    padding:30px 0;
+    background-color:#f2f2f2;
+    border-top:1px solid #f0f2f5;
+}
+.container{
+    width:1170px;
+    margin:0 auto;
+    padding-right:15px;
+    padding-left:15px;
+}
+.met_news_list{
+    position: relative;
+    /*display: flex;*/
+}
+.met_news_content{
+    width:75%;
+    padding:30px;
+    background:#fff;
+    margin:0 -15px;
+}
+.met_news_list_page {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 11px;
+
+}
+.met_news_list_page li{
+    border-bottom:1px solid #f0f2f5;
+    padding-bottom:30px;
+    margin-bottom:30px;
+}
+figure{
+    display: flex;
+}
+.met_news_list_page_img{
+    width:160px;
+    height:160px;
+    margin-right:20px;
+}
+figcaption{
+    width:637px;
+}
+figcaption h3{
+    font-size:22px;
+    margin-bottom:20px;
+}
+figcaption h3 a{
+    color:#2a333c;
+}
+figcaption h3 a:hover{
+    color:#62a8ea;
+    text-decoration:underline;
+}
+.desc{
+    color:#76838f;
+    font-size:16px;
+    font-weight:300;
+    margin-bottom:10px;
+}
+.info{
+    color:#a3afb7;
+    font-size:16px;
+    font-weight:300;
+}
+.margin-left-10{
+    margin-left:10px;
+}
+.met_news_right{
+    width:25%;
+    height:auto;
+    background:#fff;
+    margin:0 -15px;
+    padding: 20px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.met_news_txtBorder{
+    margin-bottom:20px;
+    position:relative;
+}
+.input-style {
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding-right: 30px;
+    padding: 6px 15px;
+    border-radius: 200px;
+    font-size: 14px;
+    border: 1px solid #e4eaec;
+    outline: none;
+    color:#76838f;
+    transition:all 0.25s linear;
+}
+.input-style:focus{
+    border-color:#62A8E9;
+}
+.met_news_txtBorder input::placeholder{
+    color:#76838f;
+}
+.btn_search{
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    padding:0 10px;
+    background:0 0;
+    border-radius:0 200px 200px 0;
+    border:none;
+    cursor:pointer;
+    text-align:center;
+}
+.btn_search i{
+    margin:0 3px;
+    font-size:14px;
+}
+.met_news_bar{
+    margin:20px 0;
+    padding:20px 0;
+    border-top:1px solid #f0f2f5;
+    border-bottom:1px solid #f0f2f5;
+}
+.met_news_bar h3{
+    font-size:18px;
+    font-weight:300;
+    text-shadow: rgba(0,0,0,.15) 0 0 1px;
+    color:#37474f;
+}
+.bar_list_group{
+    margin-top:10px;
+    margin-bottom:0;
+}
+.bar_list_group_items{
+    display: block;
+    padding:10px 15px;
+    background-color:#fff;
+    border:1px solid #e4eaec;
+    margin-bottom: -1px;
+}
+.bar_list_group_items a{
+    color:#2a333c;
+    font-size:15px;
+}
+.bar_list_group_items:first-child{
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+}
+.bar_list_group_items:last-child{
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    margin-bottom:0;
+}
+.bar_list_group_items a:hover{
+    color:#62a8ea;
+    text-decoration:underline;
+}
+.met_news_right_footer{
+    margin-bottom:11px;
+}
+.met_news_right_footer a{
+    font-size:16px;
+    color:#2a333c;
+}
+.met_news_right_footer a:hover{
+    color:#62a8ea;
+    text-decoration:underline;
+}
+.met_news_footer{
+    margin-top:20px;
+    text-align:center;
+    font-size:0;
+}
+.pre_span,.next_span{
+    border:1px solid #e4eaec;
+    padding:9px 15px;
+    background:#fff;
+    color:#ccd5db;
+    font-size:14px;
+}
+.met_news_footer a{
+    border:1px solid #e4eaec;
+    border-right:none;
+    padding:9px 15px;
+    text-align:center;
+    background:#fff;
+    color:#76838f;
+    font-size:14px;
+}
+.met_news_footer a:hover{
+    background-color:#f5f5f5;
+}
+.met_news_footer a.active{
+    background:#f86867;
+    border-color:#f86867;
+    color:#fff;
+    cursor:default;
+}
+.met_news_footer a.next_a{
+    border-right:1px solid #e4eaec;
+}
+/*花言花语内容结束*/
+/*素馨花卉底部开始*/
+footer{
+    background:#f5f5f5;
+    border-top:1px solid #f5f5f5;
+    padding-bottom:20px;
+    color:#aaa;
+    height:auto;
+    line-height:1.8;
+}
+.linksnav{
+    padding:10px 0;
+    background:#fff;
+}
+.met_social{
+    margin-top:10px;
+    padding:5px 0;
+    text-align:center;
+    box-sizing:border-box;
+}
+.met_social a{
+    margin:0 8px;
+}
+.met_social i{
+    font-size:26px;
+    color:#83b944;
+    position: relative;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 400;
+    transform: translate(0,0);
+    text-rendering:auto;
+    speak: none;
+}
+.met_social .social_blue{
+    color:#62a8ea;
+}
+.met_social .social_blue:hover{
+    color:#89bceb;
+}
+.txt{
+    font-size:14px;
+    text-align: center;
+}
+.txt a{
+    color:#62a8ea;
+}
+.txt a:hover{
+    color:#89bceb;
+    text-decoration:underline;
+}
+.txt img{
+    vertical-align:middle;
+}
+/*素馨花卉底部结束*/
