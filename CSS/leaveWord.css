@@ -87,12 +87,15 @@ body{
     border-left:4px solid transparent;
     border-right:4px solid transparent;
 }
+.leaveWord{
+    position:relative;
+}
 .down_menu {
     display: none;
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
     top: 79px;
-    right: 18%;
+    right: 8%;
     padding: 0;
     margin: 0;
 }
